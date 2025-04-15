@@ -1,0 +1,7 @@
+input a : UInt64
+
+output b(p) : Int64
+  spawn with a
+  eval when a == p with b(p).last(or: 0) + 1
+
+

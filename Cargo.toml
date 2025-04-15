@@ -1,0 +1,3 @@
+[workspace]
+
+members = [ "rtlola-jit-interpreter", "rtlola2rust", "streamir-lib", "rtlola2solidity" ]

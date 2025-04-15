@@ -1,0 +1,23 @@
+[package]
+name = "rtlola2rust"
+version = "0.1.0"
+edition = "2021"
+authors = [
+  "Jan Baumeister <jan.baumeister@cispa.de>",
+  "Frederik Scheerer <frederik.scheerer@cispa.de>",
+]
+homepage = "https://rtlola.org"
+license = "Apache-2.0"
+
+[[bin]]
+name = "rtlola2rust"
+path = "src/bin/main.rs"
+
+[dependencies]
+anyhow = "1.0.97"
+clap = { version = "4.5.32", features = ["derive"] }
+include_dir = { version = "0.7.4", features = ["glob"] }
+itertools = "0.14.0"
+serde_json = "1.0.140"
+streamir-lib = { path = "../streamir-lib" }
+tera = "1.20.0"

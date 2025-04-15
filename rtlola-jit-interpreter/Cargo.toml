@@ -1,0 +1,28 @@
+[package]
+name = "interpreter"
+version = "0.1.0"
+edition = "2021"
+authors = [
+  "Jan Baumeister <jan.baumeister@cispa.de>",
+  "Frederik Scheerer <frederik.scheerer@cispa.de>",
+
+]
+homepage = "https://rtlola.org"
+license = "Apache-2.0"
+
+
+[[bin]]
+name = "rtlola-jit-interpreter"
+path = "src/bin/main.rs"
+
+[dependencies]
+streamir-lib = { path = "../streamir-lib" }
+ordered-float = "5.0.0"
+thiserror = "2.0.12"
+bit-set = "0.8.0"
+dyn-clone = "1.0.19"
+itertools = "0.14.0"
+anyhow = "1.0.97"
+clap = { version = "4.5.32", features = ["derive"] }
+csv = "1.3.1"
+rust_decimal = { version = "1.37.1", features = ["maths"] }
